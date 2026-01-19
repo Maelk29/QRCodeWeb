@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align:center; font-family:sans-serif;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* This centers everything on the screen */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    min-height: 100vh;       /* Take up full screen height */
+    gap: 20px;               /* Space between buttons */
+    font-family: sans-serif;
+  }
 
-<a href="https://1drv.ms/v/c/fb2af1ffe9f5964a/IQC1mJbIyQ4bS7RnlgZreBc1AYAv4XzO42m5TZeeCYHCRwE?e=20w17w" target="_blank">
-  <button style="font-size:18px; padding:14px 24px;">
-    ▶ Play Video
-  </button>
-</a>
+  .btn {
+    font-size: 24px;         /* Larger text for thumbs */
+    padding: 20px 40px;      /* Larger hit area */
+    width: 80%;              /* Buttons take up most of the width */
+    max-width: 300px;        /* But don't get too wide on desktop */
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
 
-  
-<br><br>
+<div class="container">
 
-<a href="https://1drv.ms/w/c/fb2af1ffe9f5964a/IQANiDGpQceLSpj00M6TZCKmATI4gQdr3JnELjNYrtdfW3I" target="_blank">
-  <button style="font-size:18px; padding:12px 20px;">
-    View Document
-  </button>
-</a>
+  <a href="https://1drv.ms/v/c/fb2af1ffe9f5964a/IQC1mJbIyQ4bS7RnlgZreBc1AYAv4XzO42m5TZeeCYHCRwE?e=20w17w" target="_blank" rel="noopener">
+    <button class="btn">▶ Play Video</button>
+  </a>
+
+  <a href="https://1drv.ms/w/c/fb2af1ffe9f5964a/IQANiDGpQceLSpj00M6TZCKmATI4gQdr3JnELjNYrtdfW3I" target="_blank">
+    <button class="btn">View Document</button>
+  </a>
+
+</div>
 
 </body>
 </html>
